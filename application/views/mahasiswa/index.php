@@ -1,15 +1,5 @@
 <div class="container">
     <div class="flash-data" data-flashdata="<?= $this->session->flashdata("flash"); ?>"></div>
-    <?php if ($this->session->flashdata("flash")): ?>
-        <!-- <div class="row mt-3">
-            <div class="col-6">
-                <div class="alert alert-success alert-dismissible fade show" role="alert">
-                    Data mahasiswa <strong>Berhasil</strong> <?= $this->session->flashdata("flash"); ?>.
-                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-                </div>
-            </div>
-        </div> -->
-    <?php endif; ?>
 
     <div class="row mt-4">
         <div class="col-md-6">
