@@ -1,14 +1,14 @@
 <div class="container">
-
+    <div class="flash-data" data-flashdata="<?= $this->session->flashdata("flash"); ?>"></div>
     <?php if ($this->session->flashdata("flash")): ?>
-        <div class="row mt-3">
+        <!-- <div class="row mt-3">
             <div class="col-6">
                 <div class="alert alert-success alert-dismissible fade show" role="alert">
                     Data mahasiswa <strong>Berhasil</strong> <?= $this->session->flashdata("flash"); ?>.
                     <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
                 </div>
             </div>
-        </div>
+        </div> -->
     <?php endif; ?>
 
     <div class="row mt-4">
@@ -42,7 +42,7 @@
                 <?php foreach ($mahasiswa as $mhs): ?>
                     <li class="list-group-item">
                         <?= $mhs["nama"]; ?>
-                        <a href="<?= base_url(); ?>mahasiswa/hapus/<?= $mhs["id"]; ?>" class="ms-2 badge text-bg-danger text-decoration-none float-end" onclick="return confirm('Yakin mau di hapus?');">hapus</a>
+                        <a href="<?= base_url(); ?>mahasiswa/hapus/<?= $mhs["id"]; ?>" class="ms-2 badge text-bg-danger text-decoration-none float-end tombol-hapus">hapus</a>
                         <a href="<?= base_url(); ?>mahasiswa/ubah/<?= $mhs["id"]; ?>" class="ms-2 badge text-bg-warning text-decoration-none float-end">ubah</a>
                         <a href="<?= base_url(); ?>mahasiswa/detail/<?= $mhs["id"]; ?>" class="badge text-bg-info text-decoration-none float-end">detail</a>
                     </li>

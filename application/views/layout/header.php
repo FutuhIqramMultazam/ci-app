@@ -7,6 +7,7 @@
     <title><?= $judul ?></title>
     <link href="<?= base_url(); ?>asset/css/bootstrap.css" rel="stylesheet">
     <link href="<?= base_url(); ?>asset/css/style.css" rel="stylesheet">
+    <link href="<?= base_url(); ?>asset/css/animate.min.css" rel="stylesheet">
 </head>
 
 <body>
